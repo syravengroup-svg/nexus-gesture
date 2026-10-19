@@ -1,18 +1,18 @@
-# NEXUS GESTURE V2
+# NEXUS GESTURE V3
 
-Application web de contrôle gestuel pour Safari iPhone.
+Application web gestuelle gratuite sur Safari iPhone, esthétique hybride JARVIS / Minority Report.
 
-## Modules
-- **HOLOGRAPHIC MENU** : main ouverte pour afficher les quatre modules ; pointer puis pincer pour choisir. Les boutons sont aussi tactiles.
-- **ENERGY MANIPULATION** : particules animées et champ énergétique contrôlé par la main.
-- **DUAL HAND CONTROL** : deux mains détectées ; écarter/rapprocher pour zoomer et pivoter pour changer la rotation.
-- **VISION SCANNER** : analyse locale expérimentale de l'image (luminosité, contraste, RGB). Pas encore de reconnaissance sémantique d'objets.
-
-## Lancer
-Ouvrir https://syravengroup-svg.github.io/nexus-gesture/ dans Safari, autoriser la caméra. La reconnaissance MediaPipe nécessite Internet au premier lancement. Aucun identifiant/API payant. Utiliser HTTPS pour la caméra.
+## Fonctionnalités
+- Contrôle de noyau énergétique (main ouverte, poing, pincement)
+- Menu holographique avec modules sélectionnables
+- Champ de particules animé
+- Contrôle à deux mains
+- Scanner visuel local expérimental : couleurs, luminosité, contraste (pas encore de reconnaissance d’objets)
+- **V3 SPATIAL** : cube filaire 3D, contrôle des angles par pincement et zoom à deux mains
+- **V3 VOIX** : commandes vocales françaises si le navigateur expose SpeechRecognition ; indisponible sur certains Safari et éventuellement dépendant de services du navigateur
 
 ## Déploiement
-Le workflow .github/workflows/deploy.yml déploie sur GitHub Pages, si Pages et GitHub Actions sont activés dans les réglages du dépôt.
+GitHub Pages avec branche `main` et workflow `.github/workflows/deploy.yml`.
+Site : https://syravengroup-svg.github.io/nexus-gesture/
 
-## Notes
-Test à effectuer sur l'iPhone réel pour calibrer les seuils de gestes. La vidéo est traitée localement dans le navigateur.
+HTTPS et autorisation caméra nécessaires. Le modèle MediaPipe est téléchargé sur Internet. Aucune clé API payante requise. Les fonctions sont à tester sur iPhone réel.
