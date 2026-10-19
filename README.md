@@ -1,18 +1,18 @@
-# NEXUS GESTURE
+# NEXUS GESTURE V2
 
-Prototype de contrôle gestuel pour Safari iPhone.
+Application web de contrôle gestuel pour Safari iPhone.
 
-## Gestes
-- Main ouverte : expansion du noyau
-- Pincement pouce/index : déplacer le noyau
-- Poing fermé : impulsion énergétique
-- Déplacement tactile : contrôle sans caméra
+## Modules
+- **HOLOGRAPHIC MENU** : main ouverte pour afficher les quatre modules ; pointer puis pincer pour choisir. Les boutons sont aussi tactiles.
+- **ENERGY MANIPULATION** : particules animées et champ énergétique contrôlé par la main.
+- **DUAL HAND CONTROL** : deux mains détectées ; écarter/rapprocher pour zoomer et pivoter pour changer la rotation.
+- **VISION SCANNER** : analyse locale expérimentale de l'image (luminosité, contraste, RGB). Pas encore de reconnaissance sémantique d'objets.
 
-## Publication
-GitHub Pages : Settings > Pages > Deploy from a branch > main > / (root).
-Adresse attendue : https://syravengroup-svg.github.io/nexus-gesture/
+## Lancer
+Ouvrir https://syravengroup-svg.github.io/nexus-gesture/ dans Safari, autoriser la caméra. La reconnaissance MediaPipe nécessite Internet au premier lancement. Aucun identifiant/API payant. Utiliser HTTPS pour la caméra.
 
-La caméra nécessite HTTPS et l'autorisation de l'utilisateur. Le premier lancement nécessite Internet pour charger MediaPipe. Aucun secret API.
+## Déploiement
+Le workflow .github/workflows/deploy.yml déploie sur GitHub Pages, si Pages et GitHub Actions sont activés dans les réglages du dépôt.
 
-## Suite pour Codex
-Ajouter un menu radial activé par une main ouverte, sélection par pincement, préserver Safari iPhone et le mode tactile.
+## Notes
+Test à effectuer sur l'iPhone réel pour calibrer les seuils de gestes. La vidéo est traitée localement dans le navigateur.
